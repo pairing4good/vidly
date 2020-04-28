@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the intial page render snapshot 1`] = `
+<main
+  class="container"
+>
+  <div>
+    Showing 
+    9
+     movies in the database.
+  </div>
+  <table
+    class="table"
+  >
+    <thead>
+      <tr>
+        <th
+          scope="col"
+        >
+          Title
+        </th>
+        <th
+          scope="col"
+        >
+          Genere
+        </th>
+        <th
+          scope="col"
+        >
+          Stock
+        </th>
+        <th
+          scope="col"
+        >
+          Rate
+        </th>
+        <th
+          scope="col"
+        />
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td
+          scope="row"
+        >
+          Terminator
+        </td>
+        <td>
+          Action
+        </td>
+        <td>
+          6
+        </td>
+        <td>
+          2.5
+        </td>
+        <td>
+          <button
+            class="btn btn-danger"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          scope="row"
+        >
+          Die Hard
+        </td>
+        <td>
+          Action
+        </td>
+        <td>
+          5
+        </td>
+        <td>
+          2.5
+        </td>
+        <td>
+          <button
+            class="btn btn-danger"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          scope="row"
+        >
+          Get Out
+        </td>
+        <td>
+          Thriller
+        </td>
+        <td>
+          8
+        </td>
+        <td>
+          3.5
+        </td>
+        <td>
+          <button
+            class="btn btn-danger"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          scope="row"
+        >
+          Trip to Italy
+        </td>
+        <td>
+          Comedy
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          3.5
+        </td>
+        <td>
+          <button
+            class="btn btn-danger"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          scope="row"
+        >
+          Airplane
+        </td>
+        <td>
+          Comedy
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          3.5
+        </td>
+        <td>
+          <button
+            class="btn btn-danger"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          scope="row"
+        >
+          Wedding Crashers
+        </td>
+        <td>
+          Comedy
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          3.5
+        </td>
+        <td>
+          <button
+            class="btn btn-danger"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          scope="row"
+        >
+          Gone Girl
+        </td>
+        <td>
+          Thriller
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          4.5
+        </td>
+        <td>
+          <button
+            class="btn btn-danger"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          scope="row"
+        >
+          The Sixth Sense
+        </td>
+        <td>
+          Thriller
+        </td>
+        <td>
+          4
+        </td>
+        <td>
+          3.5
+        </td>
+        <td>
+          <button
+            class="btn btn-danger"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          scope="row"
+        >
+          The Avengers
+        </td>
+        <td>
+          Action
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          3.5
+        </td>
+        <td>
+          <button
+            class="btn btn-danger"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+`;
