@@ -58,11 +58,12 @@ class Movies extends Component {
   };
 
   render() {
-    return this.state.movies.length === 0 ? (
-      <div>There are no movies in the database.</div>
-    ) : (
-      this.renderPage()
-    );
+
+    if(this.state.movies.length === 0 ){
+      return <div>There are no movies in the database.</div>
+     } else {
+      return this.renderPage();
+    }
   }
 }
 
