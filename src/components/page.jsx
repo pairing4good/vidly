@@ -1,19 +1,7 @@
 import React, { Component, Fragment } from "react";
-import Movie from "./movie";
+import MovieRows from "./movieRows";
 
 class Page extends Component {
-  renderMovieRows = () => {
-    return this.props.movies.map((movie, i) => {
-      return (
-        <Movie
-          key={i}
-          movies={this.props.movies}
-          movie={movie}
-          callback={this.props.callback}
-        />
-      );
-    });
-  };
 
   render() {
     return (
@@ -29,7 +17,7 @@ class Page extends Component {
               <th scope="col"></th>
             </tr>
           </thead>
-          <tbody>{this.renderMovieRows()}</tbody>
+          <tbody><MovieRows movies={this.props.movies} callback={this.props.callback}/></tbody>
         </table>
       </Fragment>
     );
