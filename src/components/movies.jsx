@@ -1,7 +1,7 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { getMovies } from "../services/fakeMovieService";
-import Movie from "./movie";
 import NoMovies from "./noMovies";
+import Page from "./page";
 
 class Movies extends Component {
   state = {
@@ -18,44 +18,11 @@ class Movies extends Component {
     });
   };
 
-  renderMovieRows = () => {
-    return this.state.movies.map((movie, i) => {
-      return (
-        <Movie
-          key={i}
-          movies={this.state.movies}
-          movie={movie}
-          callback={this.handleDelete}
-        />
-      );
-    });
-  };
-
-  renderPage = () => {
-    return (
-      <Fragment>
-        <div>Showing {this.state.movies.length} movies in the database.</div>
-        <table className="table">
-          <thead>
-            <tr>
-              <th scope="col">Title</th>
-              <th scope="col">Genere</th>
-              <th scope="col">Stock</th>
-              <th scope="col">Rate</th>
-              <th scope="col"></th>
-            </tr>
-          </thead>
-          <tbody>{this.renderMovieRows()}</tbody>
-        </table>
-      </Fragment>
-    );
-  };
-
   render() {
     if (this.state.movies.length === 0) {
       return <NoMovies />;
     } else {
-      return this.renderPage();
+      return <Page movies={this.state.movies} callback={this.handleDelete} />;
     }
   }
 }
