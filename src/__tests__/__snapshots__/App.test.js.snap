@@ -51,9 +51,7 @@ exports[`should match after movie deletion 1`] = `
     </thead>
     <tbody>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Die Hard
         </td>
         <td>
@@ -74,9 +72,7 @@ exports[`should match after movie deletion 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Get Out
         </td>
         <td>
@@ -97,9 +93,7 @@ exports[`should match after movie deletion 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Trip to Italy
         </td>
         <td>
@@ -120,9 +114,7 @@ exports[`should match after movie deletion 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Airplane
         </td>
         <td>
@@ -143,9 +135,7 @@ exports[`should match after movie deletion 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Wedding Crashers
         </td>
         <td>
@@ -166,9 +156,7 @@ exports[`should match after movie deletion 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Gone Girl
         </td>
         <td>
@@ -189,9 +177,7 @@ exports[`should match after movie deletion 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           The Sixth Sense
         </td>
         <td>
@@ -212,9 +198,7 @@ exports[`should match after movie deletion 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           The Avengers
         </td>
         <td>
@@ -280,9 +264,7 @@ exports[`should match the intial page render snapshot 1`] = `
     </thead>
     <tbody>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Terminator
         </td>
         <td>
@@ -303,9 +285,7 @@ exports[`should match the intial page render snapshot 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Die Hard
         </td>
         <td>
@@ -326,9 +306,7 @@ exports[`should match the intial page render snapshot 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Get Out
         </td>
         <td>
@@ -349,9 +327,7 @@ exports[`should match the intial page render snapshot 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Trip to Italy
         </td>
         <td>
@@ -372,9 +348,7 @@ exports[`should match the intial page render snapshot 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Airplane
         </td>
         <td>
@@ -395,9 +369,7 @@ exports[`should match the intial page render snapshot 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Wedding Crashers
         </td>
         <td>
@@ -418,9 +390,7 @@ exports[`should match the intial page render snapshot 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           Gone Girl
         </td>
         <td>
@@ -441,9 +411,7 @@ exports[`should match the intial page render snapshot 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           The Sixth Sense
         </td>
         <td>
@@ -464,9 +432,7 @@ exports[`should match the intial page render snapshot 1`] = `
         </td>
       </tr>
       <tr>
-        <td
-          scope="row"
-        >
+        <td>
           The Avengers
         </td>
         <td>

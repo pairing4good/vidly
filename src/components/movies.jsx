@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from "react";
-import { getMovies } from "./services/fakeMovieService";
+import { getMovies } from "../services/fakeMovieService";
+import Movie from "./movie";
+import NoMovies from "./noMovies";
 
 class Movies extends Component {
   state = {
@@ -17,22 +19,14 @@ class Movies extends Component {
   };
 
   renderMovieRows = () => {
-    return this.state.movies.map((movie) => {
+    return this.state.movies.map((movie, i) => {
       return (
-        <tr key={movie._id}>
-          <td scope="row">{movie.title}</td>
-          <td>{movie.genre.name}</td>
-          <td>{movie.numberInStock}</td>
-          <td>{movie.dailyRentalRate}</td>
-          <td>
-            <button
-              className="btn btn-danger"
-              onClick={() => this.handleDelete(movie)}
-            >
-              Delete
-            </button>
-          </td>
-        </tr>
+        <Movie
+          key={i}
+          movies={this.state.movies}
+          movie={movie}
+          callback={this.handleDelete}
+        />
       );
     });
   };
@@ -58,10 +52,9 @@ class Movies extends Component {
   };
 
   render() {
-
-    if(this.state.movies.length === 0 ){
-      return <div>There are no movies in the database.</div>
-     } else {
+    if (this.state.movies.length === 0) {
+      return <NoMovies />;
+    } else {
       return this.renderPage();
     }
   }
