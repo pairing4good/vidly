@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "../.."
+	},
+	{
+		"path": "../../../counter-app"
+	},
+	{
+		"path": "../../../react-app"
+	}
+],
+  "settings": {}
+}

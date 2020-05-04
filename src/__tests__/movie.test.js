@@ -4,7 +4,7 @@ import Movie from "../components/movie";
 
 let firstMovie, secondMovie, thirdMovie;
 let movies;
-let eventHandler
+let eventHandler;
 
 beforeEach(() => {
   eventHandler = jest.fn(() => {});

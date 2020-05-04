@@ -11,6 +11,7 @@ class MovieRows extends Component {
                 movies={this.props.movies}
                 movie={movie}
                 callback={this.props.callback}
+                onLike={this.props.onLike}
               />
             );
           }) );

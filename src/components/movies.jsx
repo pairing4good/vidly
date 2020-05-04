@@ -6,6 +6,8 @@ import Page from "./page";
 class Movies extends Component {
   state = {
     movies: getMovies(),
+    activePage: 1,
+    pageSize: 4,
   };
 
   handleDelete = (movieToRemove) => {
@@ -18,11 +20,33 @@ class Movies extends Component {
     });
   };
 
+  handleLike = (movie) => {
+    const movies = [...this.state.movies];
+    const index = movies.indexOf(movie);
+    movies[index] = { ...movies[index] };
+    movies[index].liked = !movies[index].liked;
+
+    this.setState({ movies });
+  };
+
+  handlePageChange = (page) => {
+    this.setState({ activePage: page });
+  };
+
   render() {
     if (this.state.movies.length === 0) {
       return <NoMovies />;
     } else {
-      return <Page movies={this.state.movies} callback={this.handleDelete} />;
+      return (
+        <Page
+          activePage={this.state.activePage}
+          pageSize={this.state.pageSize}
+          onPageChange={this.handlePageChange}
+          movies={this.state.movies}
+          callback={this.handleDelete}
+          onLike={this.handleLike}
+        />
+      );
     }
   }
 }
