@@ -1,13 +1,40 @@
 import React, { Component } from "react";
 import { getMovies } from "../services/fakeMovieService";
+import { getGenres } from "../services/fakeGenreService";
 import NoMovies from "./noMovies";
 import Page from "./page";
 
 class Movies extends Component {
   state = {
-    movies: getMovies(),
+    movies: [],
+    originalMovies: [],
+    genres: [],
     activePage: 1,
     pageSize: 4,
+  };
+
+  componentDidMount() {
+    this.setState({
+      movies: getMovies(),
+      genres: getGenres(),
+      originalMovies: getMovies(),
+    });
+  }
+
+  handleShowAll = () => {
+    this.setState({
+      movies: [...this.state.originalMovies],
+    });
+  };
+
+  handleFiltering = (genre) => {
+    const filteredMovies = this.state.originalMovies.filter((movie) => {
+      return movie.genre._id === genre._id;
+    });
+
+    this.setState({
+      movies: filteredMovies,
+    });
   };
 
   handleDelete = (movieToRemove) => {
@@ -15,8 +42,13 @@ class Movies extends Component {
       (movie) => movie._id !== movieToRemove._id
     );
 
+    const filteredOriginalMovies = this.state.originalMovies.filter(
+      (movie) => movie._id !== movieToRemove._id
+    );
+
     this.setState({
       movies: filteredMovies,
+      originalMovies: filteredOriginalMovies,
     });
   };
 
@@ -43,6 +75,9 @@ class Movies extends Component {
           pageSize={this.state.pageSize}
           onPageChange={this.handlePageChange}
           movies={this.state.movies}
+          genres={this.state.genres}
+          onFilter={this.handleFiltering}
+          onShowAll={this.handleShowAll}
           callback={this.handleDelete}
           onLike={this.handleLike}
         />
