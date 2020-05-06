@@ -9,6 +9,7 @@ class Movies extends Component {
     movies: [],
     originalMovies: [],
     genres: [],
+    activeFilter: "All",
     activePage: 1,
     pageSize: 4,
   };
@@ -23,7 +24,9 @@ class Movies extends Component {
 
   handleShowAll = () => {
     this.setState({
+      activeFilter: "All",
       movies: [...this.state.originalMovies],
+      activePage: 1,
     });
   };
 
@@ -33,7 +36,9 @@ class Movies extends Component {
     });
 
     this.setState({
+      activeFilter: genre.name,
       movies: filteredMovies,
+      activePage: 1,
     });
   };
 
@@ -71,6 +76,7 @@ class Movies extends Component {
     } else {
       return (
         <Page
+          activeFilter={this.state.activeFilter}
           activePage={this.state.activePage}
           pageSize={this.state.pageSize}
           onPageChange={this.handlePageChange}

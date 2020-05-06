@@ -292,7 +292,7 @@ exports[`should match filtering 1`] = `
         class="list-group"
       >
         <li
-          class="list-group-item active"
+          class="list-group-item"
           data-testid="filter-All"
         >
           All Genere
@@ -304,7 +304,7 @@ exports[`should match filtering 1`] = `
           Action
         </li>
         <li
-          class="list-group-item"
+          class="list-group-item active"
           data-testid="filter-Comedy"
         >
           Comedy

@@ -19,7 +19,11 @@ class Page extends Component {
               <li
                 data-testid={"filter-All"}
                 onClick={this.props.onShowAll}
-                className="list-group-item active"
+                className={
+                  (this.props.activeFilter === "All"
+                    ? "list-group-item active"
+                    : "list-group-item")
+                }
               >
                 All Genere
               </li>
@@ -29,7 +33,11 @@ class Page extends Component {
                     key={genere._id}
                     data-testid={"filter-" + genere.name}
                     onClick={() => this.props.onFilter(genere)}
-                    className="list-group-item"
+                    className={
+                      (this.props.activeFilter === genere.name
+                        ? "list-group-item active"
+                        : "list-group-item")
+                    }
                   >
                     {genere.name}
                   </li>
