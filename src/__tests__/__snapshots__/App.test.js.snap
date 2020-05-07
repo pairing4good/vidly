@@ -63,21 +63,25 @@ exports[`should match after movie deletion 1`] = `
         <thead>
           <tr>
             <th
+              data-testid="title-heading"
               scope="col"
             >
               Title
             </th>
             <th
+              data-testid="genre-heading"
               scope="col"
             >
               Genere
             </th>
             <th
+              data-testid="stock-heading"
               scope="col"
             >
               Stock
             </th>
             <th
+              data-testid="rate-heading"
               scope="col"
             >
               Rate
@@ -92,16 +96,24 @@ exports[`should match after movie deletion 1`] = `
         </thead>
         <tbody>
           <tr>
-            <td>
+            <td
+              data-testid="row0-title"
+            >
               Die Hard
             </td>
-            <td>
+            <td
+              data-testid="row0-genre"
+            >
               Action
             </td>
-            <td>
+            <td
+              data-testid="row0-stock"
+            >
               5
             </td>
-            <td>
+            <td
+              data-testid="row0-rate"
+            >
               2.5
             </td>
             <td>
@@ -130,16 +142,24 @@ exports[`should match after movie deletion 1`] = `
             </td>
           </tr>
           <tr>
-            <td>
+            <td
+              data-testid="row1-title"
+            >
               Get Out
             </td>
-            <td>
+            <td
+              data-testid="row1-genre"
+            >
               Thriller
             </td>
-            <td>
+            <td
+              data-testid="row1-stock"
+            >
               8
             </td>
-            <td>
+            <td
+              data-testid="row1-rate"
+            >
               3.5
             </td>
             <td>
@@ -168,16 +188,24 @@ exports[`should match after movie deletion 1`] = `
             </td>
           </tr>
           <tr>
-            <td>
+            <td
+              data-testid="row2-title"
+            >
               Trip to Italy
             </td>
-            <td>
+            <td
+              data-testid="row2-genre"
+            >
               Comedy
             </td>
-            <td>
+            <td
+              data-testid="row2-stock"
+            >
               7
             </td>
-            <td>
+            <td
+              data-testid="row2-rate"
+            >
               3.5
             </td>
             <td>
@@ -206,16 +234,24 @@ exports[`should match after movie deletion 1`] = `
             </td>
           </tr>
           <tr>
-            <td>
+            <td
+              data-testid="row3-title"
+            >
               Airplane
             </td>
-            <td>
+            <td
+              data-testid="row3-genre"
+            >
               Comedy
             </td>
-            <td>
+            <td
+              data-testid="row3-stock"
+            >
               7
             </td>
-            <td>
+            <td
+              data-testid="row3-rate"
+            >
               3.5
             </td>
             <td>
@@ -331,21 +367,25 @@ exports[`should match filtering 1`] = `
         <thead>
           <tr>
             <th
+              data-testid="title-heading"
               scope="col"
             >
               Title
             </th>
             <th
+              data-testid="genre-heading"
               scope="col"
             >
               Genere
             </th>
             <th
+              data-testid="stock-heading"
               scope="col"
             >
               Stock
             </th>
             <th
+              data-testid="rate-heading"
               scope="col"
             >
               Rate
@@ -360,16 +400,24 @@ exports[`should match filtering 1`] = `
         </thead>
         <tbody>
           <tr>
-            <td>
+            <td
+              data-testid="row0-title"
+            >
               Trip to Italy
             </td>
-            <td>
+            <td
+              data-testid="row0-genre"
+            >
               Comedy
             </td>
-            <td>
+            <td
+              data-testid="row0-stock"
+            >
               7
             </td>
-            <td>
+            <td
+              data-testid="row0-rate"
+            >
               3.5
             </td>
             <td>
@@ -398,16 +446,24 @@ exports[`should match filtering 1`] = `
             </td>
           </tr>
           <tr>
-            <td>
+            <td
+              data-testid="row1-title"
+            >
               Airplane
             </td>
-            <td>
+            <td
+              data-testid="row1-genre"
+            >
               Comedy
             </td>
-            <td>
+            <td
+              data-testid="row1-stock"
+            >
               7
             </td>
-            <td>
+            <td
+              data-testid="row1-rate"
+            >
               3.5
             </td>
             <td>
@@ -436,16 +492,24 @@ exports[`should match filtering 1`] = `
             </td>
           </tr>
           <tr>
-            <td>
+            <td
+              data-testid="row2-title"
+            >
               Wedding Crashers
             </td>
-            <td>
+            <td
+              data-testid="row2-genre"
+            >
               Comedy
             </td>
-            <td>
+            <td
+              data-testid="row2-stock"
+            >
               7
             </td>
-            <td>
+            <td
+              data-testid="row2-rate"
+            >
               3.5
             </td>
             <td>
@@ -533,21 +597,25 @@ exports[`should match pagination 1`] = `
         <thead>
           <tr>
             <th
+              data-testid="title-heading"
               scope="col"
             >
               Title
             </th>
             <th
+              data-testid="genre-heading"
               scope="col"
             >
               Genere
             </th>
             <th
+              data-testid="stock-heading"
               scope="col"
             >
               Stock
             </th>
             <th
+              data-testid="rate-heading"
               scope="col"
             >
               Rate
@@ -562,16 +630,24 @@ exports[`should match pagination 1`] = `
         </thead>
         <tbody>
           <tr>
-            <td>
+            <td
+              data-testid="row0-title"
+            >
               The Avengers
             </td>
-            <td>
+            <td
+              data-testid="row0-genre"
+            >
               Action
             </td>
-            <td>
+            <td
+              data-testid="row0-stock"
+            >
               7
             </td>
-            <td>
+            <td
+              data-testid="row0-rate"
+            >
               3.5
             </td>
             <td>
@@ -697,21 +773,25 @@ exports[`should match the intial page render snapshot 1`] = `
         <thead>
           <tr>
             <th
+              data-testid="title-heading"
               scope="col"
             >
               Title
             </th>
             <th
+              data-testid="genre-heading"
               scope="col"
             >
               Genere
             </th>
             <th
+              data-testid="stock-heading"
               scope="col"
             >
               Stock
             </th>
             <th
+              data-testid="rate-heading"
               scope="col"
             >
               Rate
@@ -726,16 +806,24 @@ exports[`should match the intial page render snapshot 1`] = `
         </thead>
         <tbody>
           <tr>
-            <td>
+            <td
+              data-testid="row0-title"
+            >
               Terminator
             </td>
-            <td>
+            <td
+              data-testid="row0-genre"
+            >
               Action
             </td>
-            <td>
+            <td
+              data-testid="row0-stock"
+            >
               6
             </td>
-            <td>
+            <td
+              data-testid="row0-rate"
+            >
               2.5
             </td>
             <td>
@@ -764,16 +852,24 @@ exports[`should match the intial page render snapshot 1`] = `
             </td>
           </tr>
           <tr>
-            <td>
+            <td
+              data-testid="row1-title"
+            >
               Die Hard
             </td>
-            <td>
+            <td
+              data-testid="row1-genre"
+            >
               Action
             </td>
-            <td>
+            <td
+              data-testid="row1-stock"
+            >
               5
             </td>
-            <td>
+            <td
+              data-testid="row1-rate"
+            >
               2.5
             </td>
             <td>
@@ -802,16 +898,24 @@ exports[`should match the intial page render snapshot 1`] = `
             </td>
           </tr>
           <tr>
-            <td>
+            <td
+              data-testid="row2-title"
+            >
               Get Out
             </td>
-            <td>
+            <td
+              data-testid="row2-genre"
+            >
               Thriller
             </td>
-            <td>
+            <td
+              data-testid="row2-stock"
+            >
               8
             </td>
-            <td>
+            <td
+              data-testid="row2-rate"
+            >
               3.5
             </td>
             <td>
@@ -840,16 +944,24 @@ exports[`should match the intial page render snapshot 1`] = `
             </td>
           </tr>
           <tr>
-            <td>
+            <td
+              data-testid="row3-title"
+            >
               Trip to Italy
             </td>
-            <td>
+            <td
+              data-testid="row3-genre"
+            >
               Comedy
             </td>
-            <td>
+            <td
+              data-testid="row3-stock"
+            >
               7
             </td>
-            <td>
+            <td
+              data-testid="row3-rate"
+            >
               3.5
             </td>
             <td>

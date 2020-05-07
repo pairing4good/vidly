@@ -20,9 +20,9 @@ class Page extends Component {
                 data-testid={"filter-All"}
                 onClick={this.props.onShowAll}
                 className={
-                  (this.props.activeFilter === "All"
+                  this.props.activeFilter === "All"
                     ? "list-group-item active"
-                    : "list-group-item")
+                    : "list-group-item"
                 }
               >
                 All Genere
@@ -34,9 +34,9 @@ class Page extends Component {
                     data-testid={"filter-" + genere.name}
                     onClick={() => this.props.onFilter(genere)}
                     className={
-                      (this.props.activeFilter === genere.name
+                      this.props.activeFilter === genere.name
                         ? "list-group-item active"
-                        : "list-group-item")
+                        : "list-group-item"
                     }
                   >
                     {genere.name}
@@ -52,10 +52,34 @@ class Page extends Component {
             <table className="table">
               <thead>
                 <tr>
-                  <th scope="col">Title</th>
-                  <th scope="col">Genere</th>
-                  <th scope="col">Stock</th>
-                  <th scope="col">Rate</th>
+                  <th
+                    data-testid={"title-heading"}
+                    onClick={() => this.props.onSort("title")}
+                    scope="col"
+                  >
+                    Title
+                  </th>
+                  <th
+                    data-testid={"genre-heading"}
+                    onClick={() => this.props.onSort("genre.name")}
+                    scope="col"
+                  >
+                    Genere
+                  </th>
+                  <th
+                    data-testid={"stock-heading"}
+                    onClick={() => this.props.onSort("numberInStock")}
+                    scope="col"
+                  >
+                    Stock
+                  </th>
+                  <th
+                    data-testid={"rate-heading"}
+                    onClick={() => this.props.onSort("dailyRentalRate")}
+                    scope="col"
+                  >
+                    Rate
+                  </th>
                   <th scope="col"></th>
                   <th scope="col"></th>
                 </tr>

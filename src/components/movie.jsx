@@ -7,12 +7,18 @@ class Movie extends Component {
 
     return (
       <tr>
-        <td>{movie.title}</td>
-        <td>{movie.genre.name}</td>
-        <td>{movie.numberInStock}</td>
-        <td>{movie.dailyRentalRate}</td>
+        <td data-testid={"row" + this.props.rowId + "-title"}>{movie.title}</td>
+        <td data-testid={"row" + this.props.rowId + "-genre"}>
+          {movie.genre.name}
+        </td>
+        <td data-testid={"row" + this.props.rowId + "-stock"}>
+          {movie.numberInStock}
+        </td>
+        <td data-testid={"row" + this.props.rowId + "-rate"}>
+          {movie.dailyRentalRate}
+        </td>
         <td>
-          <Like onLike={this.props.onLike} movie={movie}/>
+          <Like onLike={this.props.onLike} movie={movie} />
         </td>
         <td>
           <button

@@ -3,6 +3,7 @@ import { getMovies } from "../services/fakeMovieService";
 import { getGenres } from "../services/fakeGenreService";
 import NoMovies from "./noMovies";
 import Page from "./page";
+import _ from "lodash";
 
 class Movies extends Component {
   state = {
@@ -10,8 +11,26 @@ class Movies extends Component {
     originalMovies: [],
     genres: [],
     activeFilter: "All",
+    sortColumn: { path: "", order: "desc" },
     activePage: 1,
     pageSize: 4,
+  };
+
+  handleSort = (path) => {
+    var order = this.state.sortColumn.order;
+
+    if (path === this.state.sortColumn.path) {
+      order = order === "asc" ? "desc" : "asc";
+    } else {
+      order = "asc";
+    }
+
+    const sortedMovies = _.orderBy(this.state.movies, path, order);
+
+    this.setState({
+      sortColumn: { path: path, order: order },
+      movies: sortedMovies,
+    });
   };
 
   componentDidMount() {
@@ -86,6 +105,7 @@ class Movies extends Component {
           onShowAll={this.handleShowAll}
           callback={this.handleDelete}
           onLike={this.handleLike}
+          onSort={this.handleSort}
         />
       );
     }

@@ -8,6 +8,7 @@ class MovieRows extends Component {
             return (
               <Movie
                 key={i}
+                rowId={i}
                 movies={this.props.movies}
                 movie={movie}
                 callback={this.props.callback}
