@@ -1,14 +1,17 @@
 {
   "folders": [
-	{
-		"path": "../.."
-	},
-	{
-		"path": "../../../counter-app"
-	},
-	{
-		"path": "../../../react-app"
-	}
-],
+    {
+      "path": "../.."
+    },
+    {
+      "path": "../../../counter-app"
+    },
+    {
+      "path": "../../../react-app"
+    },
+    {
+      "path": "../../../vidly-router"
+    }
+  ],
   "settings": {}
 }

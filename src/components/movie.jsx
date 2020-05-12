@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Like from "./common/like";
+import { NavLink } from "react-router-dom";
 
 class Movie extends Component {
   render() {
@@ -7,7 +8,9 @@ class Movie extends Component {
 
     return (
       <tr>
-        <td data-testid={"row" + this.props.rowId + "-title"}>{movie.title}</td>
+        <td data-testid={"row" + this.props.rowId + "-title"}>
+          <NavLink to={"/movies/" + movie._id}>{movie.title}</NavLink>
+        </td>
         <td data-testid={"row" + this.props.rowId + "-genre"}>
           {movie.genre.name}
         </td>
