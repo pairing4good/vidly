@@ -45,22 +45,12 @@ const Navigation = () => {
           </div>
         </nav>
         <Switch>
-          <Route path="/" exact>
-            <Movies />
-          </Route>
-          <Route path="/movies" exact>
-            <Movies />
-          </Route>
+          <Route path="/" exact component={Movies} />
+          <Route path="/movies" exact component={Movies} />
           <Route path="/movies/:id" component={MovieForm} />
-          <Route path="/customers">
-            <Customers />
-          </Route>
-          <Route path="/rentals">
-            <Rentals />
-          </Route>
-          <Route>
-            <PageNotFound />
-          </Route>
+          <Route path="/customers" component={Customers} />
+          <Route path="/rentals" component={Rentals} />
+          <Route component={PageNotFound} />
         </Switch>
       </div>
     </Router>
